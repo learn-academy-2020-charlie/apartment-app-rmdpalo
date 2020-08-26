@@ -18,11 +18,16 @@ class CatIndex extends Component{
                             return(
                         <Col sm="4" key={ index }>
                             <Card>
-                                <CardTitle>placeholder title</CardTitle>
-                                <CardText>placeholder text</CardText>
-                                <Button>
-                                    More info
-                                </Button>
+                                <CardTitle>
+                                    <h5>{ apartment.street }</h5>
+                                    <h5>{ apartment.city }</h5>
+                                    <h5>{ apartment.state }</h5>
+                                    <NavLink to={`/show/${apartment.id}`}>
+                                        <Button>
+                                            More info
+                                        </Button>
+                                    </NavLink>
+                                </CardTitle>
                             </Card>
                         </Col>
                             )
