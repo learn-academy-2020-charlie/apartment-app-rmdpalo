@@ -7,6 +7,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import mockApartments from './mockApartments.js'
 
 
 class App extends React.Component {
@@ -29,7 +30,7 @@ class App extends React.Component {
             <Route exact path="/" component={ Home } />
             <Route 
               path="/apartmentindex"
-              render={ (props) => <ApartmentIndex apartments={ this.state.apartments } />}
+              render={ (props) => <ApartmentIndex apartments={ mockApartments } />}
             />
         <h1>Apartment App</h1>
         { logged_in && 

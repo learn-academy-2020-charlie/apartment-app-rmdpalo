@@ -16,7 +16,7 @@ class CatIndex extends Component{
                     <Row>
                         {this.props.apartments.map((apartment, index) => {
                             return(
-                        <Col>
+                        <Col sm="4" key={ index }>
                             <Card>
                                 <CardTitle>placeholder title</CardTitle>
                                 <CardText>placeholder text</CardText>
