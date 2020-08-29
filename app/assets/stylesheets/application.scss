@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ @import 'bootstrap';
+
+#cards{
+    display: flex;
+    justify-content: center;
+}
+
+#image-apt{
+    height: 200px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    }
